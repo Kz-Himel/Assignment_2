@@ -370,6 +370,12 @@ ul li a {
     gap: 8px;
 }
 
+.social_icons img {
+    padding: 10px;
+    border: 1px solid #9100F8;
+    border-radius: 50%;
+}
+
 /* FOOTER STYLING */
 footer {
     background: url("assets/footer-bg.png") no-repeat center / cover;
@@ -396,4 +402,100 @@ footer {
     align-items: center;
     color: #fff;
     gap: 2px;
+}
+
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 576px) {
+    nav {
+        padding: 16px 20px;
+    }
+
+    nav ul, .nav_btn {
+        display: none;
+    }
+
+    .menu_bar {
+        display: block;
+    }
+
+    /* hero */
+    .hero {
+        padding: 40px 20px;
+        background: url("assets/hero-bg.png") no-repeat center / cover;
+    }
+
+    /* about */
+    .about {
+        padding: 40px 20px;
+    }
+
+    .about_container {
+        width: 100%;
+    }
+
+    .about_rating {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    /* Grid section */
+    .choose {
+        padding: 20px;
+    }
+    .grid_container {
+        grid-template-columns: 1fr;
+    }
+
+    .grid_card {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    /* Dual section */
+    .dual {
+        padding: 40px 20px;
+    }
+
+    .feature_container {
+        flex-direction: column;
+    }
+
+    .feature_card {
+        width: 90%;
+    }
+
+    .host_container {
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 90%;
+        padding: 40px 20px;
+    }
+
+    .host_content {
+        width: 100%;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .social_icons {
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .social_icons img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .footer_content .special_links {
+        width: 255px;
+        gap: 30px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .special_links .footerLink_img {
+        height: 24px;
+    }
 }
