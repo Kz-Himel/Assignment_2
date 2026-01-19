@@ -12,6 +12,12 @@ html, body {
 }
 
 /* Utality Class */
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .btn {
     background: linear-gradient(to top right, #F7E93F, #FB09B4, #9100F8);
     display: flex;
@@ -26,6 +32,12 @@ p {
     color: #c5c8cf;
 }
 
+.section h1 {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 700;
+}
+
 /* hr {
     height: 2px;
     background-color: #3e0e60;
@@ -34,9 +46,6 @@ p {
 
 /* HEADER STYLING */
 header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     background: #1a0b2e;
 }
 
@@ -87,9 +96,6 @@ ul li a {
 }
 
 .hero .hero_container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     gap: 40px;
 }
 
@@ -103,9 +109,6 @@ ul li a {
 }
 
 .hero_container .hero_content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     gap: 24px;
 }
 
@@ -130,3 +133,61 @@ ul li a {
     background: transparent;
     border: 2px solid #00ff88;
 }
+
+/* MAIN SECTION STYLING */
+/* main {
+    width: 100vw;
+    max-width: 1600px;
+} */
+
+/* About Section Styling */
+.about {
+    width: 100%;
+    padding: 50px 200px 120px 200px;
+    background: #1a0b2e;
+}
+
+.about_container {
+    justify-content: center;
+}
+
+.about_content {
+    gap: 16px;
+}
+
+.about_content p {
+    text-align: center;
+    line-height: 20px;
+}
+
+.about_content p span {
+    visibility: hidden;
+}
+
+.span_block {
+    height: 1px;
+    width: 100%;
+    background: #3e0e60;
+    margin: 80px 0;
+}
+
+.about_rating {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rating_card {
+    width: 240px;
+    gap: 16px;
+}
+
+.rating_card h2 {
+    color: #00ff88;
+    font-size: 48px;
+}
+
+.rating_card p {
+    text-transform: uppercase;
+}
+
