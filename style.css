@@ -26,6 +26,12 @@ html, body {
     border-radius: 100px;
     border: none;
     color: #fff;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
 }
 
 p {
@@ -84,6 +90,10 @@ ul li a {
     color: #fff;
 }
 
+.menu_bar {
+    display: none;
+}
+
 /* Hero Styling */
 .hero {
     width: 100vw;
@@ -106,6 +116,19 @@ ul li a {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+}
+
+.new {
+    padding: 5px 12px;
+    background: #00ff88;
+    color: #000;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    position: absolute;
+    top: 20px;
+    right: 20px;
 }
 
 .hero_container .hero_content {
@@ -345,4 +368,32 @@ ul li a {
     display: flex;
     align-items: center;
     gap: 8px;
+}
+
+/* FOOTER STYLING */
+footer {
+    background: url("assets/footer-bg.png") no-repeat center / cover;
+    padding: 120px 0;
+}
+
+.footer_content {
+    gap: 32px;
+}
+
+.footer_content h1 {
+    font-size: 60px;
+    color: #fff;
+}
+
+.footer_content .special_links {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.special_links .footerLink_img {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    gap: 2px;
 }
